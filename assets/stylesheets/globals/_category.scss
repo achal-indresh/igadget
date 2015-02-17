@@ -1,0 +1,24 @@
+.mw_arrow {
+  @include sprites-menu_go;
+  float: right;
+}
+
+#Wrapper h2 {
+	background-color: $color1;
+}
+
+.mw_indicator {
+	float: right;
+	background-color: $color1;
+}
+
+&[data-ur-state="disabled"] {
+  > .mw_indicator {
+    @extend .sprites-plus;
+  }
+}
+&[data-ur-state="enabled"] {
+  > .mw_indicator {
+    @extend .sprites-minus;
+  }
+}

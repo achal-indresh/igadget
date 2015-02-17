@@ -1,0 +1,23 @@
+//colors
+//header color
+
+$color1: #B03B01; 
+
+//link color
+$color2: #075899;
+
+#Header {
+  background: $color1;
+  a {
+    color: $color2;
+  }
+}
+
+#Header {
+	#SearchForm {
+
+		@include background(linear-gradient(top, #852201, #6a1b00));
+
+	}
+
+}
